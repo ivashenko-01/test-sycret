@@ -1,0 +1,19 @@
+.section-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    background-color: #cde5ff;
+    padding: 50px 80px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    .section-contact-form__buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
