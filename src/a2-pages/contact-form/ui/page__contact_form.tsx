@@ -60,6 +60,8 @@ export function Page__Contact_Form() {
                 MsgText: message,
             }),
         );
+
+        navigate(`/payment-order`);
     };
 
     useEffect(() => {

@@ -16,10 +16,26 @@ export const get_List_Product__Thunk = createAsyncThunk(
     },
 );
 
+type send_Select_Product_Props = {
+    Id: string;
+    TableName: string;
+    PrimaryKey: string;
+    Price: number;
+    Summa: number;
+    ClientName: string;
+    Email: string;
+    Phone: string;
+    PaymentTypeId: number;
+    UseDelivery: number;
+    DeliveryAddress: number;
+    IsGift: number;
+    MsgText: string;
+};
+
 // --- Сохранение выбранного продукта
 export const send_Select_Product__Thunk = createAsyncThunk(
     'certificate/send_Select_Product',
-    async (props, { rejectWithValue }) => {
+    async (props: send_Select_Product_Props, { rejectWithValue }) => {
         const { data, response } = await send_Select_Product(props);
 
         if (data) {

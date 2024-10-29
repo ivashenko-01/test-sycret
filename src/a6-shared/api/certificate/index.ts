@@ -11,8 +11,24 @@ export const get_List_Product = () => {
     });
 };
 
+type send_Select_Product_Props = {
+    Id: string;
+    TableName: string;
+    PrimaryKey: string;
+    Price: number;
+    Summa: number;
+    ClientName: string;
+    Email: string;
+    Phone: string;
+    PaymentTypeId: number;
+    UseDelivery: number;
+    DeliveryAddress: number;
+    IsGift: number;
+    MsgText: string;
+};
+
 // --- Сохранение выбранного продукта
-export const send_Select_Product = (props) => {
+export const send_Select_Product = (props: send_Select_Product_Props) => {
     const {
         Id,
         TableName,
